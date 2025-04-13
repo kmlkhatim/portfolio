@@ -10,28 +10,46 @@
 :root {
   --bg-color: #1f242d;
   --second-bg-color: #2a2e3b;
-  --text-color: #fff;
+  --main-color: #7cf03d;
   --second-text-color: #b8b8b8;
-  --primary-color: #3b82f6;
-  --second-color: #4f46e5;
-  --third-color: #9333ea;
-  --fourth-color: #ec4899;
-  --fifth-color: #f97316;
-  --sixth-color: #fbbf24;
-  --seventh-color: #22c55e;
+  --white-color: #fff;
+  --yellow-color: #fbff00;
 }
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 body {
-  color: var(--text-color);
+  color: var(--white-color);
 }
 header {
   position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 9%;
-    background-color: var(--bg-color);
-    display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--white-color);
+}
+.logo span {
+  color: var(--yellow-color);
+}
+nav a {
+  font-size: 2rem;
+  font-weight: 500;
+  margin-left: 3.5rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--white-color);
+}
+nav a:hover {
+  color: var(--main-color);
 }
