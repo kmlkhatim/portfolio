@@ -1,3 +1,4 @@
+/* CSS Document */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 * {
   margin: 0;
@@ -15,6 +16,7 @@
   --white-color: #fff;
   --yellow-color: #fbff00;
 }
+
 html {
   font-size: 62.5%;
 }
@@ -59,5 +61,56 @@ nav a.active {
   font-size: 3rem;
   color: var(--white-color);
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10rem 9% 2rem;
+  display: flex;
+  background: var(--bg-color);
+}
+.home {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+.home-detail h1 {
+  font-size: clamp(3rem, 5vw + 2rem, 6rem);
+}
+.home-detail h2 {
+  display: inline-block;
+  font-size: clamp(2rem, 4vw + 1rem, 4rem);
+  margin-top: -1rem;
+}
+.home-detail p {
+  font-size: 1.6rem;
+  margin: 1rem 0 2.5rem;
+}
+.home-detail .btn-sci {
+  display: flex;
+  align-items: center;
+}
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: var(--main-color);
+  border: .2rem solid var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 2rem var(--main-color);
+  font-size: 1.6rem;
+  color: var(--bg-color);
+  font-weight: 500;
+  text-decoration: none;
+  transition: .5rem;
+  cursor: pointer;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--main-color);
+  box-shadow: none;
+  border: .2rem solid var(--main-color);
   transition: all 0.3s ease;
 }
