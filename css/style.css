@@ -15,6 +15,24 @@
     --white-color: #fff;
     --dissable-color: #fff3;
 }
+.bx-menu {
+    font-size: 3rem;
+    color: var(--white-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Responsive pour afficher le menu burger */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .bx-menu {
+        display: inline-block;
+    }
+}
+
 html {
     font-size: 62.5%;
 }
