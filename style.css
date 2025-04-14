@@ -148,7 +148,7 @@ section {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  box-shadow: 0 0 0rem var(--main-color);
+  box-shadow: 0 0 4rem var(--white-color);
 }
 .home-img .img-box::before,
 .home-img .img-box::after {
@@ -164,6 +164,9 @@ section {
   );
   transform: rotate(0deg);
   animation: rotate-border 10s linear infinite;
+}
+.home-img .img-box::after {
+  animation-delay: -5s;
 }
 @keyframes rotate-border {
   100% {
@@ -190,5 +193,4 @@ section {
   height: auto;
   object-fit: cover;
   mix-blend-mode: lighten;
-} 
-
+}
