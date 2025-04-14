@@ -15,6 +15,8 @@
   --second-text-color: #b8b8b8;
   --white-color: #fff;
   --yellow-color: #fbff00;
+  --red-color: red;
+  --orange-color: #ff7f00;
 }
 
 html {
@@ -37,12 +39,12 @@ header {
 }
 .logo {
   text-decoration: none;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 700;
   color: var(--white-color);
 }
 .logo span {
-  color: var(--yellow-color);
+  color: var(--orange-color);
 }
 nav a {
   font-size: 2rem;
@@ -71,6 +73,14 @@ section {
   padding: 10rem 9% 2rem;
   display: flex;
   background: var(--bg-color);
+  visibility: hidden;
+  opacity: 0;
+  overflow: hidden;
+}
+section.active {
+  visibility: visible;
+  opacity: 1;
+  transition: auto;
 }
 .home {
   display: flex;
