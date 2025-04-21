@@ -18,8 +18,10 @@
     <!-- Style -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <header>
+    <!-- Début de l'accueil -->
+    <header class="active">
       <!-- Logo et icône de menu -->
       <a href="#" class="logo">KK<span>.</span></a>
       <i class="bx bx-menu" id="menu-icon"></i>
@@ -34,6 +36,15 @@
       </nav>
     </header>
 
+    <!-- bars background -->
+    <div class="bars-box active">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
+    </div>
     <!-- Fin de l'accueil -->
     <section class="home active">
       <div class="home-detail">
@@ -225,7 +236,7 @@
         <!-- Services bureautique -->
         <div class="services-box">
           <div class="icon">
-            <i class="bx bx-camera"></i>
+            <i class="bx bx-notepad"></i>
             <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
           <h3>Bureautique</h3>
@@ -396,6 +407,90 @@
               m’adapter rapidement à de nouveaux environnements et de travailler
               aussi bien en équipe qu’en autonomie.
             </p>
+            <div class="scrollbar">
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <i class="bx bxl-html5"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-css3"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-javascript"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-react"></i>
+                  <span>React.js</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-vuejs"></i>
+                  <span>Vue.js</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-tailwind-css"></i>
+                  <span>Tailwind CSS</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-nodejs"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-mongodb"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-firebase"></i>
+                  <span>Firebase</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-git"></i>
+                  <span>Git</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-github"></i>
+                  <span>Github</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-stack-overflow"></i>
+                  <span>Stack-overflow</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-bootstrap"></i>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-angular"></i>
+                  <span>Angular</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-postgresql"></i>
+                  <span>postgresql</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-php"></i>
+                  <span>PHP</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-jquery"></i>
+                  <span>jquery</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-visual-studio"></i>
+                  <span>Visual-studio</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bx-math"></i>
+                  <span>Math</span>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="resume-detail about">
             <h2 class="heading">Mon à <span>propos</span></h2>
@@ -413,10 +508,250 @@
               et innovants, où mes valeurs et mes compétences peuvent pleinement
               s’exprimer.
             </p>
+            <div class="Resume-about">
+              <div class="resume-item">
+                <p>Nom complet :</p>
+                <span>Kamal KHATIM</span>
+              </div>
+              <div class="resume-item">
+                <p>Adresse :</p>
+                <span>Lot Rouida av mly el hassan</span>
+              </div>
+              <div class="resume-item">
+                <p>Région :</p>
+                <span>Martil</span>
+              </div>
+              <div class="resume-item">
+                <p>Pays :</p>
+                <span>Maroc</span>
+              </div>
+              <div class="resume-item">
+                <p>E-mail :</p>
+                <span>contact@kamalkhatim.com</span>
+              </div>
+              <div class="resume-item">
+                <p>Téléphone :</p>
+                <span>+212772627914</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Section de Portfolio -->
+    <section class="portfolio">
+      <h2 class="heading">Dernier <span>projet</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <div class="portfolio-detail active">
+            <p class="numb">01</p>
+            <h3>Frontend project</h3>
+            <p>
+              Développement d'une application web front-end avec HTML, CSS et
+              JavaScript. Conception d'une interface utilisateur responsive et
+              interactive pour améliorer l'expérience utilisateur.
+            </p>
+            <div class="tech">
+              <p>HTML5 - CSS3 - JavaScript</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">02</p>
+            <h3>full-stack project</h3>
+            <p>
+              Développement d'une application web full-stack avec Node.js,
+              Express et MongoDB. Création d'une API RESTful pour gérer les
+              données et assurer la communication entre le front-end et le
+              back-end.
+            </p>
+            <div class="tech">
+              <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">03</p>
+            <h3>Gestionnaire Logistique</h3>
+            <p>
+              Développement d'une application de gestion logistique pour
+              optimiser les flux de marchandises et améliorer la traçabilité des
+              produits. Utilisation de technologies modernes pour assurer une
+              gestion efficace des stocks et des approvisionnements.
+            </p>
+            <div class="tech">
+              <p>HTML5 - CSS3 - JavaScript - Node.js - Express - MongoDB</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">04</p>
+            <h3>Backtend project</h3>
+            <p>
+              Développement d'une application web back-end avec Node.js et
+              Express. Création d'une API RESTful pour gérer les données et
+              assurer la communication entre le front-end et le back-end.
+            </p>
+            <div class="tech">
+              <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">05</p>
+            <h3>Database project</h3>
+            <p>
+              Développement d'une application de gestion de bases de données
+              avec MongoDB. Création d'une API RESTful pour gérer les données et
+              assurer la communication entre le front-end et le back-end.
+            </p>
+            <div class="tech">
+              <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">06</p>
+            <h3>Technique informatique</h3>
+            <p>
+              Développement d'une application de gestion technique informatique.
+              Création d'une API RESTful pour gérer les données et assurer la
+              communication entre le front-end et le back-end.
+            </p>
+            <div class="tech">
+              <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <div class="portfolio-carousel">
+            <div class="img-slide">
+              <div class="img-item">
+                <img src="images/Portfolio_01.webp" />
+              </div>
+              <div class="img-item">
+                <img src="images/Portfolio_02.webp" />
+              </div>
+              <div class="img-item">
+                <img src="images/Portfolio_03.jpg" />
+              </div>
+              <div class="img-item">
+                <img src="images/Portfolio_04.png" />
+              </div>
+              <div class="img-item">
+                <img src="images/Portfolio_05.png" />
+              </div>
+              <div class="img-item">
+                <img src="images/Portfolio_06.png" />
+              </div>
+            </div>
+          </div>
+          <div class="navigation">
+            <button class="arrow-left disabled">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button class="arrow-right">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section de Contact -->
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-box">
+          <h2>Travaillons ensemble</h2>
+          <p class="desc">
+            Remplissez le formulaire ci-dessous et je vous recontacte
+            rapidement.
+          </p>
+          <div class="contact-detail">
+            <i class="bx bxs-phone-call"></i>
+            <div class="detail">
+              <p>Téléphone</p>
+              <p>(+212) 772627914</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="bx bxs-envelope"></i>
+            <div class="detail">
+              <p>E-mail</p>
+              <p>contact@kamalkhatim.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="bx bxs-map"></i>
+            <div class="detail">
+              <p>Adresse</p>
+              <p>Lot rouida av mly el Hassen, Martil 93150, Maroc</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box">
+          <form action="">
+            <h2 class="heading">Contactez <span>moi</span><span>!</span></h2>
+            <div class="field-box">
+              <input type="text" placeholder="Nom complet" required />
+              <input type="mail" placeholder="Adresse E-mail" required />
+              <input type="text" placeholder="Numéro de téléphone" required />
+              <input type="text" placeholder="objet de l'e-mail" required />
+              <textarea
+                name=""
+                id=""
+                placeholder="Votre message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer un message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js"></script>
   </body>
 </html>
