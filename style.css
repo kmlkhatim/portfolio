@@ -815,8 +815,8 @@ section.active {
     gap: 2rem;
   }
   .home-img .img-box {
-    width: 35rem;
-    height: 35rem;
+    width: 30rem;
+    height: 30rem;
   }
   .home-detail .btn-sci {
     flex-direction: column-reverse;

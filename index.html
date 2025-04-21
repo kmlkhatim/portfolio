@@ -671,22 +671,22 @@
           <div class="portfolio-carousel">
             <div class="img-slide">
               <div class="img-item">
-                <img src="images/Portfolio_01.webp" />
+                <img src="images/Cours_01.jpg" />
               </div>
               <div class="img-item">
-                <img src="images/Portfolio_02.webp" />
+                <img src="images/Cours_02.jpg" />
               </div>
               <div class="img-item">
-                <img src="images/Portfolio_03.jpg" />
+                <img src="images/Cours_03.jpg" />
               </div>
               <div class="img-item">
-                <img src="images/Portfolio_04.png" />
+                <img src="images/Cours_04.jpg" />
               </div>
               <div class="img-item">
-                <img src="images/Portfolio_05.png" />
+                <img src="images/Cours_05.jpg" />
               </div>
               <div class="img-item">
-                <img src="images/Portfolio_06.png" />
+                <img src="images/Cours_06.jpg" />
               </div>
             </div>
           </div>
@@ -733,15 +733,15 @@
           </div>
         </div>
         <div class="contact-box">
-          <form action="">
+          <form id="contact-form" action="https://formspree.io/f/xwpoewer" method="POST">
             <h2 class="heading">Contactez <span>moi</span><span class="contact-orange">!</span></h2>
             <div class="field-box">
-              <input type="text" placeholder="Nom complet" required />
-              <input type="mail" placeholder="Adresse E-mail" required />
-              <input type="text" placeholder="Numéro de téléphone" required />
-              <input type="text" placeholder="objet de l'e-mail" required />
+              <input type="text" name="name" placeholder="Nom complet" required />
+              <input type="mail" name="email" placeholder="Adresse E-mail" required />
+              <input type="text" name="phone" placeholder="Numéro de téléphone" required />
+              <input type="text" name="subject" placeholder="objet de l'e-mail" required />
               <textarea
-                name=""
+                name="message"
                 id=""
                 placeholder="Votre message"
                 required></textarea>
