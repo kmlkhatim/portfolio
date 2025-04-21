@@ -815,8 +815,8 @@ section.active {
     gap: 2rem;
   }
   .home-img .img-box {
-    width: 40rem;
-    height: 40rem;
+    width: 35rem;
+    height: 35rem;
   }
   .home-detail .btn-sci {
     flex-direction: column-reverse;
@@ -858,11 +858,11 @@ section.active {
     text-align: center;
   }
   .home-detail h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .home-detail h2 {
     display: inline-block;
-    font-size: 1rem;
+    font-size: 2rem;
     margin-top: 1rem;
   }
   .home-detail .btn-sci {
