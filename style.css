@@ -293,7 +293,6 @@ section.active {
   font-size: 5rem;
   text-align: center;
   margin-bottom: 2rem;
-  
 }
 .heading span {
   color: var(--main-color);
@@ -660,7 +659,7 @@ section.active {
   padding: 2rem;
 }
 .contact-container .contact-box:first-child {
-  align-self: center; 
+  align-self: center;
 }
 .contact-box h2 {
   font-size: 4.5rem;
@@ -682,7 +681,7 @@ section.active {
   color: var(--main-color);
   font-size: 3rem;
   padding: 1.2rem;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   margin-right: 1.5rem;
 }
 .contact-detail .detail p:first-child {
@@ -709,8 +708,8 @@ section.active {
 .contact-box .field-box textarea {
   padding: 1.5rem;
   background: var(--bg-color);
-  border: .15rem solid var(--bg-color);
-  border-radius: .6rem;
+  border: 0.15rem solid var(--bg-color);
+  border-radius: 0.6rem;
   font-size: 1.6rem;
   color: var(--white-color);
 }
@@ -772,8 +771,8 @@ section.active {
     width: 100%;
     padding: 1rem 0;
     background: var(--bg-color);
-    border-top: .1rem solid var(--bg-color);
-    box-shadow: 0 .5rem 1rem var(--bg-color);
+    border-top: 0.1rem solid var(--bg-color);
+    box-shadow: 0 0.5rem 1rem var(--bg-color);
     text-align: center;
     display: none;
   }
