@@ -525,7 +525,7 @@ section.active {
   font-size: 1.5rem;
 }
 .portfolio .heading {
-  margin-bottom: 15rem;
+  margin-bottom: 3rem;
 }
 .portfolio-container {
   display: grid;
@@ -798,7 +798,7 @@ section.active {
     grid-template-columns: 1fr;
   }
   .resume-container .resume-box {
-    gap: 2rem;
+    gap: 1rem;
   }
   .portfolio-container .portfolio-box {
     order: 1rem;
