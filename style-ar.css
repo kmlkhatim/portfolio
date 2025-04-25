@@ -7,7 +7,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: "Tajawal", "Poppins", sans-serif;
 }
 :root {
   --bg-color: #1f242d;
@@ -40,6 +40,7 @@ header {
   visibility: hidden;
   opacity: 0;
 }
+
 header.active {
   animation: show-header 1.5s linear forwards;
   animation-delay: 1.2s;
@@ -59,14 +60,19 @@ header.active {
 .logo span {
   color: var(--orange-color);
 }
+body.ar nav a {
+  margin-right: 3.5rem;
+  margin-left: 0;
+}
 nav a {
   font-size: 2rem;
   font-weight: 500;
-  margin-left: 3.5rem;
+  margin-right: 3.5rem;
   transition: all 0.3s ease;
   text-decoration: none;
   color: var(--white-color);
 }
+
 nav a:hover,
 nav a.active {
   color: var(--main-color);
@@ -126,6 +132,7 @@ nav a img:hover {
   }
 }
 section {
+  direction: rtl;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -148,10 +155,11 @@ section.active {
 .home {
   display: flex;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
 }
-.home-detail h1 {
+.home-detail h1{
   font-size: 5rem;
+  text-align: right;
 }
 .home-detail h2 {
   display: inline-block;
@@ -195,6 +203,7 @@ section.active {
 .home-detail p {
   font-size: 1.6rem;
   margin: 1rem 0 2.5rem;
+  text-align: right;
 }
 .home-detail .btn-sci {
   display: flex;
@@ -223,7 +232,7 @@ section.active {
   transition: all 0.3s ease;
 }
 .home-detail .btn-sci .sci {
-  margin-left: 2rem;
+  margin-right: 2rem;
   font-size: 2.5rem;
   color: var(--white-color);
   transition: all 0.3s ease;
