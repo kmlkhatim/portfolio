@@ -71,6 +71,19 @@ nav a:hover,
 nav a.active {
   color: var(--main-color);
 }
+nav a img {
+  width: 40px;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 4px;
+  margin-left: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+nav a img:hover {
+  transform: scale(1.1);
+}
+
 #menu-icon {
   display: none;
   font-size: 3rem;
@@ -726,6 +739,7 @@ section.active {
   margin-top: 2rem;
   cursor: pointer;
 }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 55%;

@@ -4,6 +4,31 @@ const sections = document.querySelectorAll("section");
 const menuIcon = document.querySelector("#menu-icon");
 const navbar = document.querySelector("header nav");
 
+//------
+
+// Langue Switcher Dropdown
+document.addEventListener("DOMContentLoaded", function () {
+  const langBtn = document.getElementById("lang-btn");
+  const langOptions = document.getElementById("lang-options");
+
+  if (langBtn && langOptions) {
+    langBtn.addEventListener("click", () => {
+      langOptions.classList.toggle("show");
+    });
+
+    // Fermer le menu si clic en dehors
+    window.addEventListener("click", (e) => {
+      if (!langBtn.contains(e.target)) {
+        langOptions.classList.remove("show");
+      }
+    });
+  }
+});
+
+
+
+//------
+
 menuIcon.addEventListener("click", () => {
   menuIcon.classList.toggle("bx-x");
   navbar.classList.toggle("active");
