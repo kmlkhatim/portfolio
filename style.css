@@ -744,8 +744,10 @@ section.active {
   html {
     font-size: 55%;
   }
+  .services-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-
 @media screen and (max-width: 992px) {
   header {
     padding: 2rem 4%;
@@ -753,69 +755,31 @@ section.active {
   section {
     padding: 10rem 4% 2rem;
   }
-  #menu-icon {
-    display: block;
-  }
-  nav {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    background: var(--bg-color);
-    display: none;
-    text-align: center;
-    padding: 1rem 0;
-    border-top: 0.1rem solid var(--bg-color);
-    box-shadow: 0 0.5rem 1rem var(--bg-color);
-  }
-  nav.active {
-    display: block;
-  }
-  nav a {
-    margin: 2rem 0;
-  }
   .home-img .img-box {
-    width: 40rem;
-    height: 40rem;
+    width: 43rem;
+    height: 43rem;
   }
-  .resume-container,
-  .portfolio-container,
-  .contact-container {
-    grid-template-columns: 1fr;
+  .services-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media screen and (max-width: 810px) {
+  .contact-box .field-box {
+    grid-template-columns: 1fr;
+  }
   .home-detail h1 {
     font-size: 4rem;
   }
   .home {
     flex-direction: column-reverse;
+    justify-content: center;
     gap: 2rem;
   }
-  nav {
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    background: var(--bg-color);
-    display: none;
-    text-align: center;
-    padding: 1rem 0;
-    border-top: 0.1rem solid var(--bg-color);
-    box-shadow: 0 0.5rem 1rem var(--bg-color);
-  }
-  nav.active {
-    display: block;
-  }
-  nav a {
-    margin: 2rem 0;
-  }
-  .resume-container,
-  .portfolio-container,
-  .contact-container {
-    grid-template-columns: 1fr;
+  .home-img .img-box {
+    width: 43rem;
+    height: 43rem;
   }
 }
-
 @media screen and (max-width: 768px) {
   #menu-icon {
     display: block;
@@ -823,19 +787,26 @@ section.active {
   nav {
     position: absolute;
     top: 100%;
+    left: 0;
     width: 100%;
-    background: var(--bg-color);
-    display: none;
-    text-align: center;
     padding: 1rem 0;
+    background: var(--bg-color);
     border-top: 0.1rem solid var(--bg-color);
     box-shadow: 0 0.5rem 1rem var(--bg-color);
+    text-align: center;
+    display: none;
   }
   nav.active {
     display: block;
   }
   nav a {
+    display: block;
     margin: 2rem 0;
+  }
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
   }
   .home-img .img-box {
     width: 40rem;
@@ -846,9 +817,22 @@ section.active {
   .contact-container {
     grid-template-columns: 1fr;
   }
+  .resume-container .resume-box {
+    gap: 1rem;
+  }
+  .portfolio-container .portfolio-box {
+    order: 1rem;
+  }
+  .contact-box .field-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
 @media screen and (max-width: 600px) {
+  .home {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 2rem;
+  }
   .home-img .img-box {
     width: 30rem;
     height: 30rem;
@@ -860,30 +844,96 @@ section.active {
     margin-left: 0;
     margin-bottom: 2rem;
   }
+  .contact-box .field-box {
+    grid-template-columns: 1fr;
+  }
+  .contact-detail form {
+    margin-bottom: -30rem;
+  }
+  .resume-container,
+  .portfolio-container,
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+  .resume-container .resume-box {
+    gap: 2rem;
+  }
+  .portfolio-container .portfolio-box {
+    order: 1rem;
+  }
+  .contact-box .field-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-container {
+    grid-template-columns: 1fr;
+  }
 }
-
 @media screen and (max-width: 450px) {
   html {
     font-size: 50%;
   }
-  .home-detail h1 {
-    font-size: 3rem;
+  .home-detail,
+  .resume-box h2,
+  .resume-box .heading,
+  .resume-box .desc,
+  .resume-detail.about .resume-item {
     text-align: center;
   }
+  .home-detail h1 {
+    font-size: 3rem;
+  }
   .home-detail h2 {
+    display: inline-block;
     font-size: 2rem;
     margin-top: 1rem;
-    text-align: center;
   }
   .home-detail .btn-sci {
     flex-direction: column-reverse;
-    text-align: center;
+  }
+  .home-detail .btn-sci .sci {
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
   .contact-box form {
     padding: 2rem 2.5rem 3.5rem;
   }
   .contact-box h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .contact-box .field-box {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home-detail,
+  .resume-box h2,
+  .resume-box .heading,
+  .resume-box .desc,
+  .resume-detail.about .resume-item {
     text-align: center;
+  }
+  .home-detail h1 {
+    font-size: 3rem;
+  }
+  .home-detail h2 {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  .home-detail .btn-sci {
+    flex-direction: column-reverse;
+  }
+  .contact-box .field-box {
+    grid-template-columns: 1fr;
+  }
+  .home-detail .btn-sci .sci {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .contact-box form {
+    padding: 2rem 2.5rem 3.5rem;
+  }
+  .contact-box h2 {
+    font-size: 3.5rem;
   }
 }
