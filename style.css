@@ -795,7 +795,7 @@ section.active {
   }
   nav a {
     display: block;
-    margin: 4rem 0;
+    margin: 2rem 0;
   }
   .home {
     flex-direction: column-reverse;
