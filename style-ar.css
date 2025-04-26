@@ -157,7 +157,7 @@ section.active {
   align-items: center;
   gap: 2rem;
 }
-.home-detail h1{
+.home-detail h1 {
   font-size: 5rem;
   text-align: right;
 }
