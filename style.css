@@ -56,6 +56,7 @@ header.active {
   font-weight: 700;
   color: var(--white-color);
 }
+
 .logo span {
   color: var(--orange-color);
 }
