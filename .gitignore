@@ -1,3 +1,4 @@
 images/*.webp
 images/*.png
 images/*.jpg
+.DS_Store
