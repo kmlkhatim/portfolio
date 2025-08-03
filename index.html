@@ -1,774 +1,872 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon Portfolio FR</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Français KML</title>
+    <!-- Boxicons -->
+    <!-- Boxicons CDN -->
+    <!-- Intégration de Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
-  <!-- Boxicons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
 
-  <!-- Style -->
-  <link rel="stylesheet" href="/style.css" />
+    <!-- Style -->
+    <link rel="stylesheet" href="/style.css" />
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-MTTCMBW7');</script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-MTTCMBW7");
+    </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NQ757CF0VE"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-NQ757CF0VE"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-    gtag('config', 'G-NQ757CF0VE');
-  </script>
+      gtag("config", "G-NQ757CF0VE");
+    </script>
+  </head>
 
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-MTTCMBW7"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- Début de l'accueil -->
+    <header class="active">
+      <!-- Logo et icône de menu -->
+      <a href="#" class="logo">KK<span>.</span></a>
+      <!-- <img src="/images/logo_kml.png" alt="" class="logo" /> -->
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-</head>
+      <!-- Menu de navigation -->
+      <nav>
+        <a href="#" class="active">Accueil</a>
+        <a href="#">Services</a>
+        <a href="#">CV</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+        <a href="index-en.html"
+          ><img src="/images/royaume-uni.png" alt="Anglais"
+        /></a>
+      </nav>
+    </header>
 
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MTTCMBW7" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- Début de l'accueil -->
-  <header class="active">
-    <!-- Logo et icône de menu -->
-    <a href="#" class="logo">KK<span>.</span></a>
-    <!-- <img src="/images/logo_kml.png" alt="" class="logo" /> -->
-    <i class="bx bx-menu" id="menu-icon"></i>
-
-    <!-- Menu de navigation -->
-    <nav>
-      <a href="#" class="active">Accueil</a>
-      <a href="#">Services</a>
-      <a href="#">CV</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contact</a>
-      <a href="index-en.html"><img src="/images/royaume-uni.png" alt="Anglais" /></a>
-      <a href="index-es.html"><img src="/images/drapeau.png" alt="Espagne" /></a>
-      <a href="index-allemagne.html"><img src="/images/allemagne.png" alt="Allemagne" /></a>
-      <a href="index-suede.html"><img src="/images/suede.png" alt="Suédois" /></a>
-      <a href="index-ar.html"><img src="/images/emirats-arabes-unis.png" alt="Arabe" /></a>
-    </nav>
-  </header>
-
-  <!-- bars background -->
-  <div class="bars-box active">
-    <div class="bar" style="--i: 6"></div>
-    <div class="bar" style="--i: 5"></div>
-    <div class="bar" style="--i: 4"></div>
-    <div class="bar" style="--i: 3"></div>
-    <div class="bar" style="--i: 2"></div>
-    <div class="bar" style="--i: 1"></div>
-  </div>
-  <!-- Fin de l'accueil -->
-  <section class="home active">
-    <div class="home-detail">
-      <h1>C'est moi, Kamal KHATIM</h1>
-      <h2>
-        Je suis
-        <span style="--i: 4" data-type="Développeur IT">Développeur IT</span>
-        <span style="--i: 3" data-type="Gestionnaire logistique">Gestionnaire logistique</span>
-        <span style="--i: 2" data-type="Junior Data Scientist">Junior Data Scientist</span>
-      </h2>
-      <p>
-        Développeur IT et gestionnaire logistique, sourd et muet, je conçois des solutions digitales efficaces et
-        optimise les processus sur le terrain. Junior Data Scientist, je combine rigueur, adaptabilité et sens du
-        résultat pour relever des défis techniques et organisationnels.
-      </p>
-
-      <!-- Bouton de téléchargement et icônes de réseaux sociaux -->
-      <div class="btn-sci">
-        <a href="files/CV_Francais.pdf" target="_blank" class="btn">
-          Télécharge <span>CV</span>
-        </a>
-        <div class="sci">
-          <a href="https://github.com/kmlkhatim" target="_blank"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/kamal-khatim/" target="_blank"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://discord.com/users/kk_kamal_khatim" target="_blank"><i class="bx bxl-discord-alt"></i></a>
-          <a href="https://web.facebook.com/kamal.khatim" target="_blank"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/kml404/" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="https://x.com/khatim_kamal" target="_blank"><i class="bx bxl-twitter"></i></a>
-          <a href="https://wa.me/212772627914" target="_blank"><i class="bx bxl-whatsapp"></i></a>
-        </div>
-      </div>
+    <!-- bars background -->
+    <div class="bars-box active">
+      <div class="bar" style="--i: 6"></div>
+      <div class="bar" style="--i: 5"></div>
+      <div class="bar" style="--i: 4"></div>
+      <div class="bar" style="--i: 3"></div>
+      <div class="bar" style="--i: 2"></div>
+      <div class="bar" style="--i: 1"></div>
     </div>
+    <!-- Fin de l'accueil -->
+    <section class="home active">
+      <div class="home-detail">
+        <h1>C'est moi, Kamal KHATIM</h1>
+        <h2>
+          Je suis
+          <span style="--i: 1" data-type="Développeur Full-Stack">Développeur Full-Stack</span
+          >
+          <span style="--i: 2" data-type="Technicien informatique certifié">Technicien informatique certifié</span
+          >
+          <span style="--i: 3" data-type="Ancien responsable logistique forestière">Ancien responsable logistique forestière</span
+          >
+          <span style="--i: 4" data-type="Créateur de solutions web/mobile accessibles">Créateur de solutions web/mobile accessibles</span
+          >
+        </h2>
+        <p>
+          Développeur Full Stack, technicien informatique certifié (CESI,
+          Bac+2), avec 15+ ans d’expérience en logistique et développement
+          web/mobile. Passionné par l’accessibilité, l’innovation et la data
+          science.
+        </p>
 
-    <!-- Profil en image -->
-    <div class="home-img">
-      <div class="img-box">
-        <div class="img-item">
-          <img src="/images/Kamal_Medaille.png" alt="Kamal KHATIM" />
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Section de service -->
-  <section class="services">
-    <h2 class="heading">Mes <span>Services</span></h2>
-    <div class="services-container">
-      <!-- Service Développeur full-stack -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-analyse"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Développeur full-stack</h3>
-        <p>
-          Développement d'applications web complètes, de la conception à la
-          mise en production, en passant par le développement front-end et
-          back-end.
-        </p>
-      </div>
-
-      <!-- Services UX/UI Design -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bxs-paint"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>UX/UI Design</h3>
-        <p>
-          Conception d'interfaces utilisateur intuitives et esthétiques pour
-          améliorer l'expérience utilisateur.
-        </p>
-      </div>
-
-      <!-- IT -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-cog"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Technique informatique</h3>
-        <p>
-          Gestion des systèmes informatiques, dépannage et maintenance pour
-          assurer un fonctionnement optimal.
-        </p>
-      </div>
-
-      <!-- Services Gestionnaire logistique -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-briefcase"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Gestionnaire logistique</h3>
-        <p>
-          Optimisation des flux logistiques, gestion des stocks et
-          coordination des opérations pour une efficacité maximale.
-        </p>
-      </div>
-      <!-- Services Data Science -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-stats"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Data Science</h3>
-        <p>
-          Analyse de données pour extraire des insights pertinents et orienter
-          la prise de décision stratégique.
-        </p>
-      </div>
-      <!-- Service Design d'intérieur -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-note"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Spécialiste classement bois & export grumes</h3>
-        <p>
-          Solide expérience en classement des bois, exportation de grumes et logistique forestière internationale
-        </p>
-      </div>
-
-      <!-- Service Gestion de communauté  -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-paper-plane"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Gestion de communauté</h3>
-        <p>
-          Animation et gestion de communautés en ligne, création de contenu
-          engageant et interaction avec les membres.
-        </p>
-      </div>
-
-      <!-- Service Gestion de bases de données  -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bxs-server"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Gestion de bases de données</h3>
-        <p>
-          Conception, mise en place et gestion de bases de données pour
-          assurer la sécurité et l'intégrité des données.
-        </p>
-      </div>
-
-      <!-- Services outils commerciaux -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-shield-alt-2"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Outils commerciaux</h3>
-        <p>
-          Développement d'outils commerciaux sur mesure pour optimiser les
-          processus et améliorer la productivité.
-        </p>
-      </div>
-
-      <!-- Services SEO -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-trending-up"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>SEO</h3>
-        <p>
-          Optimisation des sites web pour améliorer leur visibilité sur les
-          moteurs de recherche et attirer un trafic organique.
-        </p>
-      </div>
-
-      <!-- Services photographe -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-camera"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Photographe</h3>
-        <p>
-          Photographe professionnel, je capture des moments uniques et crée
-          des images qui racontent une histoire. Mon style allie créativité et
-          technique pour offrir des photos de haute qualité.
-        </p>
-      </div>
-
-      <!-- Services bureautique -->
-      <div class="services-box">
-        <div class="icon">
-          <i class="bx bx-notepad"></i>
-          <a href="#"><i class="bx bx-arrow-back"></i></a>
-        </div>
-        <h3>Bureautique</h3>
-        <p>
-          Expertise en bureautique, je maîtrise les outils de productivité
-          pour optimiser la gestion des tâches administratives et améliorer
-          l'efficacité au travail.
-        </p>
-      </div>
-    </div>
-  </section>
-  <!-- Section du CV -->
-  <section class="resume">
-    <div class="resume-container">
-      <div class="resume-box">
-        <h2>Pourquoi me recruter ?</h2>
-        <p class="desc">
-          Je suis un professionnel polyvalent, junior dans le développement IT, senior en gestion logistique et
-          spécialiste du classement des bois et de l’exportation de grumes. Cette triple compétence me permet de
-          m’adapter aisément à des environnements variés et de relever des défis multiples.
-          Fort d’une solide expérience en gestion, je mobilise rigueur et sens de l’organisation tout en consolidant mes
-          compétences techniques dans le domaine numérique. Curieux et passionné par l’innovation, je reste constamment
-          à l’écoute des évolutions technologiques afin de concevoir des solutions efficaces, pertinentes et adaptées
-          aux besoins du terrain.
-        </p>
-        <button class="resume-btn active">Éxperiences</button><button class="resume-btn">Éducations</button><button
-          class="resume-btn">Compétences</button><button class="resume-btn">À propos</button>
-      </div>
-      <div class="resume-box">
-        <div class="resume-detail experience active">
-          <h2 class="heading">Mes <span>éxperiences</span></h2>
-          <p class="desc">
-            Récompensé par quatre médailles en reconnaissance de mon
-            engagement et de mon excellence professionnelle dont certaines
-            remises par des ministres et le Président de la République
-            Centrafricaine, j’ai su faire preuve d’un leadership affirmé dans
-            la gestion et la logistique. Aujourd’hui, passionné par la
-            transformation digitale, j’allie mes compétences en IT, en
-            logistique et en data pour optimiser l’efficacité et la
-            performance des entreprises. En tant que professionnel sourd-muet,
-            je communique aisément par écrit et je suis à la recherche d’un
-            environnement professionnel où je pourrai mettre mon profil unique
-            au service d’une organisation innovante et inclusive.
-          </p>
-          <div class="scrollbar">
-            <div class="resume-liste">
-              <div class="resume-item">
-                <p class="year">2016 - 2024</p>
-                <h3>Directeur Gérant</h3>
-                <p class="company">Boulangerie FATTAL</p>
-                <p class="county">Bangui, République Centrafricaine</p>
-                <p>
-                  Gestion quotidienne des opérations et de la production des
-                  produits de boulangerie. Supervision des stocks, des
-                  commandes et de l'approvisionnement en matières premières.
-                  Encadrement et formation d'une équipe pour garantir la
-                  qualité du service. Suivi des performances financières,
-                  saisie des écritures comptables et optimisation des coûts.
-                </p>
-              </div>
-            </div>
-            <div class="resume-liste">
-              <div class="resume-item">
-                <p class="year">2007 - 2013</p>
-                <h3>Responsable logistique d'exploitaion forestière</h3>
-                <p class="company">SCAD</p>
-                <p class="county">M'Baïki, République Centrafricaine</p>
-                <p>
-                  Gestion des flux logistiques et des stocks . Saisie et suivi
-                  des données logistiques et opérationnelles. Chaîne
-                  d'approvisionnement pour les pièces des équipements
-                  forestiers. Utilisation d'outils informatiques pour la
-                  gestion quotidienne des opérations.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="resume-detail education">
-          <h2 class="heading">Mes <span>éducations</span></h2>
-          <p class="desc">
-            Titulaire d’un diplôme de niveau Bac +2 en Techniques Informatiques obtenu auprès de CESI, je complète
-            actuellement mon parcours par des formations en ligne axées sur la data science, le développement web
-            full-stack, Git & GitHub et l’UX/UI design. Je possède également une spécialisation dans le classement des
-            bois et l’exportation de grumes.
-
-            Curieux et en constante évolution, je me forme régulièrement aux outils numériques modernes afin de
-            renforcer mes compétences et d’élargir mon champ de connaissances.
-          </p>
-          <div class="scrollbar">
-            <div class="resume-liste">
-              <div class="resume-item">
-                <p class="year">2021</p>
-                <h3>Comptable</h3>
-                <p class="company">
-                  Cabinet d'Audit-Assistance Comptable et Conseils
-                </p>
-                <p>
-                  Formation en comptabilité et gestion financière.
-                  Apprentissage des principes de base de la comptabilité, de
-                  la gestion des stocks et de l'analyse financière.
-                  Utilisation d'outils informatiques pour la saisie et le
-                  suivi des écritures comptables.
-                </p>
-              </div>
-            </div>
-            <div class="resume-liste">
-              <div class="resume-item">
-                <p class="year">2020</p>
-                <h3>Technique informtique</h3>
-                <p class="company">CESI</p>
-                <p>
-                  Diplôme de niveau Bac +2 en Techniques Informatiques.
-                  Formation axée sur le développement web, la gestion de bases
-                  de données et l'administration système. Apprentissage des
-                  langages de programmation tels que HTML, CSS, JavaScript et
-                  PHP.
-                </p>
-              </div>
-            </div>
-            <div class="resume-liste">
-              <div class="resume-item">
-                <p class="year">2018</p>
-                <h3>Forêt, bois et commerce</h3>
-                <p class="company">Fayswood (Madagascar)</p>
-                <p>
-                  Participation à 20 modules de formation en ligne portant sur la connaissance des forêts, le classement
-                  des bois et le commerce du bois. Attestation signée par Richard Fays en décembre 2020.
-                </p>
-              </div>
-            </div>
-            <div class="resume-liste">
-              <div class="resume-item">
-                <p class="year">2008</p>
-                <h3>Baccalauréat série B</h3>
-                <p class="company">Lycée d'état des rapides</p>
-                <p>
-                  Diplôme de Baccalauréat en Sciences Économiques et Sociales.
-                  Formation générale en économie, gestion et sciences
-                  sociales. Apprentissage des principes fondamentaux de
-                  l'économie et de la gestion d'entreprise.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="resume-detail competence">
-          <h2 class="heading">Mes <span>Compétences</span></h2>
-          <p class="desc">
-            Mon parcours combinant l’informatique, la logistique et la gestion
-            m’a permis d’acquérir des compétences solides et variées. En
-            développement web, je maîtrise les langages HTML, CSS, JavaScript
-            ainsi que le framework React. Je me forme également activement à
-            la data science avec Python, en explorant des outils comme Pandas,
-            NumPy ou Matplotlib. Parallèlement, mes années d’expérience dans
-            la gestion logistique m’ont apporté une rigueur organisationnelle,
-            une capacité à encadrer des équipes, à gérer les stocks, les
-            approvisionnements et les flux. Je suis aussi à l’aise avec les
-            outils collaboratifs (Google Drive, Trello, Microsoft Office) et
-            j’utilise Git & GitHub pour la gestion de versions de mes projets.
-            Créatif, autonome et toujours curieux, je suis capable de
-            m’adapter rapidement à de nouveaux environnements et de travailler
-            aussi bien en équipe qu’en autonomie.
-          </p>
-          <div class="scrollbar">
-            <div class="resume-liste">
-              <div class="resume-item">
-                <i class="bx bxl-html5"></i>
-                <span>HTML5</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-css3"></i>
-                <span>CSS3</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-javascript"></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-react"></i>
-                <span>React.js</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-vuejs"></i>
-                <span>Vue.js</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-tailwind-css"></i>
-                <span>Tailwind CSS</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-nodejs"></i>
-                <span>Node.js</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-mongodb"></i>
-                <span>MongoDB</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-python"></i>
-                <span>Python</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-firebase"></i>
-                <span>Firebase</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-git"></i>
-                <span>Git</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-github"></i>
-                <span>Github</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-stack-overflow"></i>
-                <span>Stack-overflow</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-bootstrap"></i>
-                <span>Bootstrap</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-angular"></i>
-                <span>Angular</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-postgresql"></i>
-                <span>postgresql</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-php"></i>
-                <span>PHP</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-jquery"></i>
-                <span>jquery</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bxl-visual-studio"></i>
-                <span>Visual-studio</span>
-              </div>
-              <div class="resume-item">
-                <i class="bx bx-math"></i>
-                <span>Math</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="resume-detail about">
-          <h2 class="heading">Mon à <span>propos</span></h2>
-          <p class="desc">
-            Je m'appelle Kamal KHATIM, un professionnel passionné par la
-            technologie, l’organisation et l’innovation. Fort de plus de 7 ans
-            d'expérience en gestion logistique et actuellement en reconversion
-            dans le développement IT, je mets mon expertise et ma rigueur au
-            service de projets digitaux et de transformations efficaces. En
-            tant que professionnel sourd-muet, je transforme mon handicap en
-            force, en développant une communication écrite claire et un sens
-            poussé de l’analyse. Curieux, autodidacte et résilient, je suis
-            toujours à la recherche de nouvelles compétences et de défis à
-            relever. J’ai à cœur de contribuer à des environnements inclusifs
-            et innovants, où mes valeurs et mes compétences peuvent pleinement
-            s’exprimer.
-          </p>
-          <div class="Resume-about">
-            <div class="resume-item">
-              <p>Nom complet :</p>
-              <span>Kamal KHATIM</span>
-            </div>
-            <div class="resume-item">
-              <p>Adresse :</p>
-              <span>Lot Rouida av mly el hassan</span>
-            </div>
-            <div class="resume-item">
-              <p>Région :</p>
-              <span>Martil</span>
-            </div>
-            <div class="resume-item">
-              <p>Pays :</p>
-              <span>Maroc</span>
-            </div>
-            <div class="resume-item">
-              <p>E-mail :</p>
-              <span>contact@kamalkhatim.com</span>
-            </div>
-            <div class="resume-item">
-              <p>Téléphone :</p>
-              <span>+212772627914</span>
-            </div>
+        <!-- Bouton de téléchargement et icônes de réseaux sociaux -->
+        <div class="btn-sci">
+          <a href="files/cv_Kamal_fr.pdf" target="_blank" class="btn">
+            Télécharge <span>CV</span>
+          </a>
+          <div class="sci">
+            <a href="https://github.com/kmlkhatim" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/kamal-khatim/" target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="https://discord.com/users/kk_kamal_khatim" target="_blank"
+              ><i class="bx bxl-discord-alt"></i
+            ></a>
+            <a href="https://web.facebook.com/kamal.khatim" target="_blank"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <a href="https://www.instagram.com/kml404/" target="_blank"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+            <a href="https://x.com/khatim_kamal" target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a href="https://wa.me/212772627914" target="_blank"
+              ><i class="bx bxl-whatsapp"></i
+            ></a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Section de Portfolio -->
-  <section class="portfolio">
-    <h2 class="heading">Dernier <span>projet</span></h2>
-    <div class="portfolio-container">
-      <div class="portfolio-box">
-        <div class="portfolio-detail active">
-          <p class="numb">01</p>
-          <h3>Projet front-end</h3>
+
+      <!-- Profil en image -->
+      <div class="home-img">
+        <div class="img-box">
+          <div class="img-item">
+            <img src="/images/Kamal_Medaille.png" alt="Kamal KHATIM" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section de service -->
+    <section class="services">
+      <h2 class="heading">Mes <span>Services</span></h2>
+      <div class="services-container">
+        <!-- Service Développeur full-stack -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-analyse"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Développeur full-stack</h3>
           <p>
-            Ce projet est un site vitrine réalisé pour une entreprise fictive
-            spécialisée dans la gestion durable des forêts. L’objectif était
-            de créer une interface immersive qui reflète les valeurs
-            écologiques de l’entreprise.
+            Développement d'applications web complètes, de la conception à la
+            mise en production, en passant par le développement front-end et
+            back-end.
           </p>
-          <div class="tech">
-            <p>HTML5 - CSS3</p>
-          </div>
-          <div class="live-github">
-            <a href=""><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
-            <a href="https://kmlkhatim.github.io/site_foretq/"><i class="bx bxl-github"></i><span>Github
-                Repository</span></a>
-          </div>
         </div>
-        <div class="portfolio-detail">
-          <p class="numb">02</p>
-          <h3>Parcours Front-end</h3>
+
+        <!-- Services UX/UI Design -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bxs-paint"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>UX/UI Design</h3>
           <p>
-            Développeur freelance créatif et polyvalent, passionné par la
-            conception de solutions digitales accessibles et sur mesure. En
-            situation de handicap auditif, j’ai transformé cette réalité en
-            force, développant une grande rigueur, une forte capacité
-            d’adaptation et une attention particulière à l’inclusivité dans
-            mes projets. À travers ce site, je partage mon parcours
-            professionnel, mes compétences en développement web et mobile,
-            ainsi que mes réalisations. Mon objectif est de démontrer que la
-            différence n’est jamais un obstacle à la performance, bien au
-            contraire — elle peut devenir un moteur d’innovation et de sens.
-            Ce site est un espace d’expression, de transparence et de contact,
-            pour permettre aux visiteurs de découvrir mon univers, mes valeurs
-            et mes services. Chaque projet que je réalise est guidé par
-            l’écoute, la précision et le respect des besoins de chacun.
+            Conception d'interfaces utilisateur intuitives et esthétiques pour
+            améliorer l'expérience utilisateur.
           </p>
-          <div class="tech">
-            <p>HTML5 - CSS3</p>
-          </div>
-          <div class="live-github">
-            <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
-            <a href="https://kmlkhatim.github.io/histoire_kamal/"><i class="bx bxl-github"></i><span>Github
-                Repository</span></a>
-          </div>
         </div>
-        <div class="portfolio-detail">
-          <p class="numb">03</p>
-          <h3>Projet en cours Full-Stack</h3>
-          <p>
-            Je développe actuellement une solution complète d’e-commerce
-            destinée à la vente de produits en ligne, intégrant une version
-            mobile (application React Native) et une version web (site
-            développé avec Vite + React.js). Ce projet est également connecté
-            à une API Node.js et une base de données MongoDB, et inclut une
-            section dédiée à mon portfolio professionnel.
-          </p>
-          <div class="tech">
-            <p>
-              React Native - React.js (Vite) - Node.js - Express - MongoDB -
-              Tailwind CSS
-            </p>
+
+        <!-- IT -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-cog"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <div class="live-github">
-            <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
-            <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
-          </div>
-        </div>
-        <div class="portfolio-detail">
-          <p class="numb">04</p>
-          <h3>Projet IT</h3>
-          <p>
-            Ce projet consiste en la conception et le développement d’une application web destinée à la gestion des
-            stocks, des ventes et des clients pour une PME. L'objectif principal est d'offrir une solution centralisée,
-            simple et intuitive permettant de suivre les entrées/sorties de produits, générer des rapports de ventes, et
-            faciliter la prise de décision stratégique.
-          </p>
-          <div class="tech">
-            <p>HTML - CSS3</p>
-          </div>
-          <div class="live-github">
-            <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
-            <a href="https://kmlkhatim.github.io/informatique_express/"><i class="bx bxl-github"></i><span>Github
-                Repository</span></a>
-          </div>
-        </div>
-        <div class="portfolio-detail">
-          <p class="numb">05</p>
-          <h3>Database project</h3>
-          <p>
-            Développement d'une application de gestion de bases de données
-            avec MongoDB. Création d'une API RESTful pour gérer les données et
-            assurer la communication entre le front-end et le back-end.
-          </p>
-          <div class="tech">
-            <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
-          </div>
-          <div class="live-github">
-            <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
-            <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
-          </div>
-        </div>
-        <div class="portfolio-detail">
-          <p class="numb">06</p>
           <h3>Technique informatique</h3>
           <p>
-            Développement d'une application de gestion technique informatique.
-            Création d'une API RESTful pour gérer les données et assurer la
-            communication entre le front-end et le back-end.
+            Gestion des systèmes informatiques, dépannage et maintenance pour
+            assurer un fonctionnement optimal.
           </p>
-          <div class="tech">
-            <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
+        </div>
+
+        <!-- Services Gestionnaire logistique -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-briefcase"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
           </div>
-          <div class="live-github">
-            <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
-            <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+          <h3>Gestionnaire logistique</h3>
+          <p>
+            Optimisation des flux logistiques, gestion des stocks et
+            coordination des opérations pour une efficacité maximale.
+          </p>
+        </div>
+        <!-- Services Data Science -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-stats"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Data Science</h3>
+          <p>
+            Analyse de données pour extraire des insights pertinents et orienter
+            la prise de décision stratégique.
+          </p>
+        </div>
+        <!-- Service Design d'intérieur -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-note"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Spécialiste classement bois & export grumes</h3>
+          <p>
+            Solide expérience en classement des bois, exportation de grumes et
+            logistique forestière internationale
+          </p>
+        </div>
+
+        <!-- Service Gestion de communauté  -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-paper-plane"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Gestion de communauté</h3>
+          <p>
+            Animation et gestion de communautés en ligne, création de contenu
+            engageant et interaction avec les membres.
+          </p>
+        </div>
+
+        <!-- Service Gestion de bases de données  -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bxs-server"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Gestion de bases de données</h3>
+          <p>
+            Conception, mise en place et gestion de bases de données pour
+            assurer la sécurité et l'intégrité des données.
+          </p>
+        </div>
+
+        <!-- Services outils commerciaux -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-shield-alt-2"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Outils commerciaux</h3>
+          <p>
+            Développement d'outils commerciaux sur mesure pour optimiser les
+            processus et améliorer la productivité.
+          </p>
+        </div>
+
+        <!-- Services SEO -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-trending-up"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>SEO</h3>
+          <p>
+            Optimisation des sites web pour améliorer leur visibilité sur les
+            moteurs de recherche et attirer un trafic organique.
+          </p>
+        </div>
+
+        <!-- Services photographe -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-camera"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Photographe</h3>
+          <p>
+            Photographe professionnel, je capture des moments uniques et crée
+            des images qui racontent une histoire. Mon style allie créativité et
+            technique pour offrir des photos de haute qualité.
+          </p>
+        </div>
+
+        <!-- Services bureautique -->
+        <div class="services-box">
+          <div class="icon">
+            <i class="bx bx-notepad"></i>
+            <a href="#"><i class="bx bx-arrow-back"></i></a>
+          </div>
+          <h3>Bureautique</h3>
+          <p>
+            Expertise en bureautique, je maîtrise les outils de productivité
+            pour optimiser la gestion des tâches administratives et améliorer
+            l'efficacité au travail.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Section du CV -->
+    <section class="resume">
+      <div class="resume-container">
+        <div class="resume-box">
+          <h2>Pourquoi me recruter ?</h2>
+          <p class="desc">
+            Je suis un professionnel polyvalent, junior dans le développement
+            IT, senior en gestion logistique et spécialiste du classement des
+            bois et de l’exportation de grumes. Cette triple compétence me
+            permet de m’adapter aisément à des environnements variés et de
+            relever des défis multiples. Fort d’une solide expérience en
+            gestion, je mobilise rigueur et sens de l’organisation tout en
+            consolidant mes compétences techniques dans le domaine numérique.
+            Curieux et passionné par l’innovation, je reste constamment à
+            l’écoute des évolutions technologiques afin de concevoir des
+            solutions efficaces, pertinentes et adaptées aux besoins du terrain.
+          </p>
+          <button class="resume-btn active">Éxperiences</button
+          ><button class="resume-btn">Éducations</button
+          ><button class="resume-btn">Compétences</button
+          ><button class="resume-btn">À propos</button>
+        </div>
+        <div class="resume-box">
+          <div class="resume-detail experience active">
+            <h2 class="heading">Mes <span>éxperiences</span></h2>
+            <p class="desc">
+              Récompensé par quatre médailles en reconnaissance de mon
+              engagement et de mon excellence professionnelle dont certaines
+              remises par des ministres et le Président de la République
+              Centrafricaine, j’ai su faire preuve d’un leadership affirmé dans
+              la gestion et la logistique. Aujourd’hui, passionné par la
+              transformation digitale, j’allie mes compétences en IT, en
+              logistique et en data pour optimiser l’efficacité et la
+              performance des entreprises. En tant que professionnel sourd-muet,
+              je communique aisément par écrit et je suis à la recherche d’un
+              environnement professionnel où je pourrai mettre mon profil unique
+              au service d’une organisation innovante et inclusive.
+            </p>
+            <div class="scrollbar">
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <p class="year">2016 - 2024</p>
+                  <h3>Directeur Gérant</h3>
+                  <p class="company">Boulangerie FATTAL</p>
+                  <p class="county">Bangui, République Centrafricaine</p>
+                  <p>
+                    Gestion quotidienne des opérations et de la production des
+                    produits de boulangerie. Supervision des stocks, des
+                    commandes et de l'approvisionnement en matières premières.
+                    Encadrement et formation d'une équipe pour garantir la
+                    qualité du service. Suivi des performances financières,
+                    saisie des écritures comptables et optimisation des coûts.
+                  </p>
+                </div>
+              </div>
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <p class="year">2007 - 2013</p>
+                  <h3>Responsable logistique d'exploitaion forestière</h3>
+                  <p class="company">SCAD</p>
+                  <p class="county">M'Baïki, République Centrafricaine</p>
+                  <p>
+                    Gestion des flux logistiques et des stocks . Saisie et suivi
+                    des données logistiques et opérationnelles. Chaîne
+                    d'approvisionnement pour les pièces des équipements
+                    forestiers. Utilisation d'outils informatiques pour la
+                    gestion quotidienne des opérations.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-detail education">
+            <h2 class="heading">Mes <span>éducations</span></h2>
+            <p class="desc">
+              Titulaire d’un diplôme de niveau Bac +2 en Techniques
+              Informatiques obtenu auprès de CESI, je complète actuellement mon
+              parcours par des formations en ligne axées sur la data science, le
+              développement web full-stack, Git & GitHub et l’UX/UI design. Je
+              possède également une spécialisation dans le classement des bois
+              et l’exportation de grumes. Curieux et en constante évolution, je
+              me forme régulièrement aux outils numériques modernes afin de
+              renforcer mes compétences et d’élargir mon champ de connaissances.
+            </p>
+            <div class="scrollbar">
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <p class="year">2021</p>
+                  <h3>Comptable</h3>
+                  <p class="company">
+                    Cabinet d'Audit-Assistance Comptable et Conseils
+                  </p>
+                  <p>
+                    Formation en comptabilité et gestion financière.
+                    Apprentissage des principes de base de la comptabilité, de
+                    la gestion des stocks et de l'analyse financière.
+                    Utilisation d'outils informatiques pour la saisie et le
+                    suivi des écritures comptables.
+                  </p>
+                </div>
+              </div>
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <p class="year">2020</p>
+                  <h3>Technique informtique</h3>
+                  <p class="company">CESI</p>
+                  <p>
+                    Diplôme de niveau Bac +2 en Techniques Informatiques.
+                    Formation axée sur le développement web, la gestion de bases
+                    de données et l'administration système. Apprentissage des
+                    langages de programmation tels que HTML, CSS, JavaScript et
+                    PHP.
+                  </p>
+                </div>
+              </div>
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <p class="year">2018</p>
+                  <h3>Forêt, bois et commerce</h3>
+                  <p class="company">Fayswood (Madagascar)</p>
+                  <p>
+                    Participation à 20 modules de formation en ligne portant sur
+                    la connaissance des forêts, le classement des bois et le
+                    commerce du bois. Attestation signée par Richard Fays en
+                    décembre 2020.
+                  </p>
+                </div>
+              </div>
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <p class="year">2008</p>
+                  <h3>Baccalauréat série B</h3>
+                  <p class="company">Lycée d'état des rapides</p>
+                  <p>
+                    Diplôme de Baccalauréat en Sciences Économiques et Sociales.
+                    Formation générale en économie, gestion et sciences
+                    sociales. Apprentissage des principes fondamentaux de
+                    l'économie et de la gestion d'entreprise.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-detail competence">
+            <h2 class="heading">Mes <span>Compétences</span></h2>
+            <p class="desc">
+              Mon parcours combinant l’informatique, la logistique et la gestion
+              m’a permis d’acquérir des compétences solides et variées. En
+              développement web, je maîtrise les langages HTML, CSS, JavaScript
+              ainsi que le framework React. Je me forme également activement à
+              la data science avec Python, en explorant des outils comme Pandas,
+              NumPy ou Matplotlib. Parallèlement, mes années d’expérience dans
+              la gestion logistique m’ont apporté une rigueur organisationnelle,
+              une capacité à encadrer des équipes, à gérer les stocks, les
+              approvisionnements et les flux. Je suis aussi à l’aise avec les
+              outils collaboratifs (Google Drive, Trello, Microsoft Office) et
+              j’utilise Git & GitHub pour la gestion de versions de mes projets.
+              Créatif, autonome et toujours curieux, je suis capable de
+              m’adapter rapidement à de nouveaux environnements et de travailler
+              aussi bien en équipe qu’en autonomie.
+            </p>
+            <div class="scrollbar">
+              <div class="resume-liste">
+                <div class="resume-item">
+                  <i class="bx bxl-html5"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-css3"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-javascript"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-react"></i>
+                  <span>React.js</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-vuejs"></i>
+                  <span>Vue.js</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-tailwind-css"></i>
+                  <span>Tailwind CSS</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-nodejs"></i>
+                  <span>Node.js</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-mongodb"></i>
+                  <span>MongoDB</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-python"></i>
+                  <span>Python</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-firebase"></i>
+                  <span>Firebase</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-git"></i>
+                  <span>Git</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-github"></i>
+                  <span>Github</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-stack-overflow"></i>
+                  <span>Stack-overflow</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-bootstrap"></i>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-angular"></i>
+                  <span>Angular</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-postgresql"></i>
+                  <span>postgresql</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-php"></i>
+                  <span>PHP</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-jquery"></i>
+                  <span>jquery</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bxl-visual-studio"></i>
+                  <span>Visual-studio</span>
+                </div>
+                <div class="resume-item">
+                  <i class="bx bx-math"></i>
+                  <span>Math</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="resume-detail about">
+            <h2 class="heading">Mon à <span>propos</span></h2>
+            <p class="desc">
+              Je m'appelle Kamal KHATIM, un professionnel passionné par la
+              technologie, l’organisation et l’innovation. Fort de plus de 7 ans
+              d'expérience en gestion logistique et actuellement en reconversion
+              dans le développement IT, je mets mon expertise et ma rigueur au
+              service de projets digitaux et de transformations efficaces. En
+              tant que professionnel sourd-muet, je transforme mon handicap en
+              force, en développant une communication écrite claire et un sens
+              poussé de l’analyse. Curieux, autodidacte et résilient, je suis
+              toujours à la recherche de nouvelles compétences et de défis à
+              relever. J’ai à cœur de contribuer à des environnements inclusifs
+              et innovants, où mes valeurs et mes compétences peuvent pleinement
+              s’exprimer.
+            </p>
+            <div class="Resume-about">
+              <div class="resume-item">
+                <p>Nom complet :</p>
+                <span>Kamal KHATIM</span>
+              </div>
+              <div class="resume-item">
+                <p>Adresse :</p>
+                <span>Lot Rouida av mly el hassan</span>
+              </div>
+              <div class="resume-item">
+                <p>Région :</p>
+                <span>Martil</span>
+              </div>
+              <div class="resume-item">
+                <p>Pays :</p>
+                <span>Maroc</span>
+              </div>
+              <div class="resume-item">
+                <p>E-mail :</p>
+                <span>contact@kamalkhatim.com</span>
+              </div>
+              <div class="resume-item">
+                <p>Téléphone :</p>
+                <span>+212772627914</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="portfolio-box">
-        <div class="portfolio-carousel">
-          <div class="img-slide">
-            <div class="img-item">
-              <img src="images/portfolio_1.png" />
+    </section>
+    <!-- Section de Portfolio -->
+    <section class="portfolio">
+      <h2 class="heading">Dernier <span>projet</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <div class="portfolio-detail active">
+            <p class="numb">01</p>
+            <h3>Projet front-end</h3>
+            <p>
+              Ce projet est un site vitrine réalisé pour une entreprise fictive
+              spécialisée dans la gestion durable des forêts. L’objectif était
+              de créer une interface immersive qui reflète les valeurs
+              écologiques de l’entreprise.
+            </p>
+            <div class="tech">
+              <p>HTML5 - CSS3</p>
             </div>
-            <div class="img-item">
-              <img src="images/portfolio_2.png" />
+            <div class="live-github">
+              <a href=""
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="https://kmlkhatim.github.io/site_foretq/"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
             </div>
-            <div class="img-item">
-              <img src="images/portfolio_3.png" />
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">02</p>
+            <h3>Parcours Front-end</h3>
+            <p>
+              Développeur freelance créatif et polyvalent, passionné par la
+              conception de solutions digitales accessibles et sur mesure. En
+              situation de handicap auditif, j’ai transformé cette réalité en
+              force, développant une grande rigueur, une forte capacité
+              d’adaptation et une attention particulière à l’inclusivité dans
+              mes projets. À travers ce site, je partage mon parcours
+              professionnel, mes compétences en développement web et mobile,
+              ainsi que mes réalisations. Mon objectif est de démontrer que la
+              différence n’est jamais un obstacle à la performance, bien au
+              contraire — elle peut devenir un moteur d’innovation et de sens.
+              Ce site est un espace d’expression, de transparence et de contact,
+              pour permettre aux visiteurs de découvrir mon univers, mes valeurs
+              et mes services. Chaque projet que je réalise est guidé par
+              l’écoute, la précision et le respect des besoins de chacun.
+            </p>
+            <div class="tech">
+              <p>HTML5 - CSS3</p>
             </div>
-            <div class="img-item">
-              <img src="images/portfolio_4.png" />
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="https://kmlkhatim.github.io/histoire_kamal/"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
             </div>
-            <div class="img-item">
-              <img src="images/Cours_05.jpg" />
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">03</p>
+            <h3>Projet en cours Full-Stack</h3>
+            <p>
+              Je développe actuellement une solution complète d’e-commerce
+              destinée à la vente de produits en ligne, intégrant une version
+              mobile (application React Native) et une version web (site
+              développé avec Vite + React.js). Ce projet est également connecté
+              à une API Node.js et une base de données MongoDB, et inclut une
+              section dédiée à mon portfolio professionnel.
+            </p>
+            <div class="tech">
+              <p>
+                React Native - React.js (Vite) - Node.js - Express - MongoDB -
+                Tailwind CSS
+              </p>
             </div>
-            <div class="img-item">
-              <img src="images/Cours_06.jpg" />
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">04</p>
+            <h3>Projet IT</h3>
+            <p>
+              Ce projet consiste en la conception et le développement d’une
+              application web destinée à la gestion des stocks, des ventes et
+              des clients pour une PME. L'objectif principal est d'offrir une
+              solution centralisée, simple et intuitive permettant de suivre les
+              entrées/sorties de produits, générer des rapports de ventes, et
+              faciliter la prise de décision stratégique.
+            </p>
+            <div class="tech">
+              <p>HTML - CSS3</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="https://kmlkhatim.github.io/informatique_express/"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">05</p>
+            <h3>Database project</h3>
+            <p>
+              Développement d'une application de gestion de bases de données
+              avec MongoDB. Création d'une API RESTful pour gérer les données et
+              assurer la communication entre le front-end et le back-end.
+            </p>
+            <div class="tech">
+              <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
+            </div>
+          </div>
+          <div class="portfolio-detail">
+            <p class="numb">06</p>
+            <h3>Technique informatique</h3>
+            <p>
+              Développement d'une application de gestion technique informatique.
+              Création d'une API RESTful pour gérer les données et assurer la
+              communication entre le front-end et le back-end.
+            </p>
+            <div class="tech">
+              <p>Node.js - Express - MongoDB - React.js - Tailwind CSS</p>
+            </div>
+            <div class="live-github">
+              <a href="#"
+                ><i class="bx bx-arrow-back"></i><span>Live Project</span></a
+              >
+              <a href="#"
+                ><i class="bx bxl-github"></i><span>Github Repository</span></a
+              >
             </div>
           </div>
         </div>
-        <div class="navigation">
-          <button class="arrow-left disabled">
-            <i class="bx bx-chevron-left"></i>
-          </button>
-          <button class="arrow-right">
-            <i class="bx bx-chevron-right"></i>
-          </button>
+        <div class="portfolio-box">
+          <div class="portfolio-carousel">
+            <div class="img-slide">
+              <div class="img-item">
+                <img src="images/portfolio_1.png" />
+              </div>
+              <div class="img-item">
+                <img src="images/portfolio_2.png" />
+              </div>
+              <div class="img-item">
+                <img src="images/portfolio_3.png" />
+              </div>
+              <div class="img-item">
+                <img src="images/portfolio_4.png" />
+              </div>
+              <div class="img-item">
+                <img src="images/Cours_05.jpg" />
+              </div>
+              <div class="img-item">
+                <img src="images/Cours_06.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="navigation">
+            <button class="arrow-left disabled">
+              <i class="bx bx-chevron-left"></i>
+            </button>
+            <button class="arrow-right">
+              <i class="bx bx-chevron-right"></i>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- Section de Contact -->
-  <section class="contact">
-    <div class="contact-container">
-      <div class="contact-box">
-        <h2>Travaillons ensemble</h2>
-        <p class="desc">
-          Remplissez le formulaire ci-dessous et je vous recontacte
-          rapidement.
-        </p>
-        <div class="contact-detail">
-          <i class="bx bxs-phone-call"></i>
-          <div class="detail">
-            <p>Téléphone</p>
-            <p>(+212) 772627914</p>
+    </section>
+    <!-- Section de Contact -->
+    <section class="contact">
+      <div class="contact-container">
+        <div class="contact-box">
+          <h2>Travaillons ensemble</h2>
+          <p class="desc">
+            Remplissez le formulaire ci-dessous et je vous recontacte
+            rapidement.
+          </p>
+          <div class="contact-detail">
+            <i class="bx bxs-phone-call"></i>
+            <div class="detail">
+              <p>Téléphone</p>
+              <p>(+212) 772627914</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="bx bxs-envelope"></i>
+            <div class="detail">
+              <p>E-mail</p>
+              <p>contact@kamalkhatim.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <i class="bx bxs-map"></i>
+            <div class="detail">
+              <p>Adresse</p>
+              <p>Lot rouida av mly el Hassen, Martil 93150, Maroc</p>
+            </div>
           </div>
         </div>
-        <div class="contact-detail">
-          <i class="bx bxs-envelope"></i>
-          <div class="detail">
-            <p>E-mail</p>
-            <p>contact@kamalkhatim.com</p>
-          </div>
-        </div>
-        <div class="contact-detail">
-          <i class="bx bxs-map"></i>
-          <div class="detail">
-            <p>Adresse</p>
-            <p>Lot rouida av mly el Hassen, Martil 93150, Maroc</p>
-          </div>
+        <div class="contact-box">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xwpoewer"
+            method="POST"
+          >
+            <h2 class="heading">
+              Contactez <span>moi</span><span class="contact-orange">!</span>
+            </h2>
+            <div class="field-box">
+              <input
+                type="text"
+                name="name"
+                placeholder="Nom complet"
+                required
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Adresse E-mail"
+                required
+              />
+              <input
+                type="text"
+                name="phone"
+                placeholder="Numéro de téléphone"
+                required
+              />
+              <input
+                type="text"
+                name="subject"
+                placeholder="Objet de l'e-mail"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Votre message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn">Envoyer un message</button>
+          </form>
         </div>
       </div>
-      <div class="contact-box">
-        <form id="contact-form" action="https://formspree.io/f/xwpoewer" method="POST">
-          <h2 class="heading">
-            Contactez <span>moi</span><span class="contact-orange">!</span>
-          </h2>
-          <div class="field-box">
-            <input type="text" name="name" placeholder="Nom complet" required />
-            <input type="email" name="email" placeholder="Adresse E-mail" required />
-            <input type="text" name="phone" placeholder="Numéro de téléphone" required />
-            <input type="text" name="subject" placeholder="Objet de l'e-mail" required />
-            <textarea name="message" placeholder="Votre message" required></textarea>
-          </div>
-          <button type="submit" class="btn">Envoyer un message</button>
-        </form>
+    </section>
 
-      </div>
-    </div>
-  </section>
-
-  <script src="script.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
