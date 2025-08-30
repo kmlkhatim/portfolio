@@ -103,21 +103,20 @@ nav a img:hover {
   width: 100%;
   height: 100%;
   background: var(--bg-color);
+  transform: translateY(0);
   animation: hides-bars 0.5s ease-in-out both;
   animation-delay: calc(0.1s * var(--i));
 }
 @keyframes hides-bars {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-100%); }
 }
+
 .bars-box.active .bar {
   animation: show-bars 0.5s ease-in-out both;
   animation-delay: calc(0.1s * var(--i));
 }
+
 @keyframes show-bars {
   0% {
     transform: translateY(-100%);
@@ -137,7 +136,7 @@ section {
 }
 section.active {
   animation: show-content 1.5s linear forwards;
-  animation-delay: 1.6s;
+  animation-delay: 0.5s;
 }
 @keyframes show-content {
   100% {
